@@ -1,5 +1,25 @@
 const sampleArray = [469, 755, 244, 245, 758, 450, 302, 20, 712, 71, 456, 21, 398, 339, 882, 848, 179, 535, 940, 472];
 
+
+function showResults(kataResult, kataSelected)  {
+
+    const target = document.getElementsByTagName("body")[0];
+
+    const paragraph = document.createElement("p")
+
+    const conteudo = 'o kata selecionado foi o: ' + kataSelected +' com o resultado: ' + kataResult ;
+
+    paragraph.innerText = conteudo;
+
+    target.appendChild(paragraph)
+
+    
+    
+}
+
+
+
+
 function kata1() {
 
     let count = []
@@ -10,7 +30,8 @@ function kata1() {
 
     }
 
-    return count;
+    
+    return showResults(count, "kata1");
 
 }
 
@@ -21,7 +42,7 @@ function kata2() {
 
         count.push(i)
     }
-    return count;
+    return showResults(count, "kata2");
 }
 
 function kata3() {
@@ -31,7 +52,7 @@ function kata3() {
 
         count.push(i)
     }
-    return count;
+    return showResults(count, "kata3");
 }
 
 function kata4() {
@@ -41,7 +62,7 @@ function kata4() {
 
         count.push(i);
     }
-    return count;
+    return showResults(count, "kata4");
 }
 
 function kata5() {
@@ -52,7 +73,7 @@ function kata5() {
 
         count.push(i);
     }
-    return count;
+    return showResults(count, "kata5");
 }
 
 function kata6() {
@@ -66,7 +87,7 @@ function kata6() {
         }
                 
     }
-    return count;
+    return showResults(count, "kata6");
     
 }
 
@@ -81,7 +102,7 @@ function kata7() {
         }
                 
     }
-    return count;
+    return showResults(count, "kata7");
 }
 
 function kata8() {
@@ -98,7 +119,7 @@ function kata8() {
         }
         
     }
-    return count;
+    return showResults(count, "kata8");
 }
 
 function kata9() {
@@ -111,12 +132,12 @@ function kata9() {
             count.push(i);
         }               
     }
-    return count;
+    return showResults(count, "kata9");
 }
 
 function kata10(array) {
 
-    return array
+    return showResults(array, "kata10")
     
 }
 
@@ -133,7 +154,7 @@ function kata11(array) {
         
                 
     }
-    return count;
+    return showResults(count, "kata11");
 
 
 }
@@ -150,7 +171,7 @@ function kata12(array) {
         
                 
     }
-    return count;
+    return showResults(count, "kata12");
 }
 
 
@@ -166,7 +187,7 @@ function kata13(array) {
         
                 
     }
-    return count;
+    return showResults(count, "kata13");
 }
 
 function kata14(array) {
@@ -182,7 +203,7 @@ function kata14(array) {
                 
     }
 
-    return count;
+    return showResults(count, "kata14");
 }
 
 function kata15() {
@@ -199,7 +220,7 @@ function kata15() {
                 
     }
 
-    return count;
+    return showResults(count, "kata15");
 }
 
 function kata16(array) {
@@ -214,7 +235,7 @@ function kata16(array) {
                 
     }
 
-    return count;
+    return showResults(count, "kata16");
 }
 
 function kata17(array) {
@@ -234,7 +255,7 @@ function kata17(array) {
                 
     }
 
-    return count;
+    return showResults(count, "kata17");
 }
 
 function kata18(array) {
@@ -253,8 +274,28 @@ function kata18(array) {
                 
     }
 
-    return count;
+    return showResults(count, "kata18");
 }
+
+kata1()
+kata2()
+kata3()
+kata4()
+kata5()
+kata6()
+kata7()
+kata8()
+kata9()
+kata10(sampleArray)
+kata11(sampleArray)
+kata12(sampleArray)
+kata13(sampleArray)
+kata14(sampleArray)
+kata15()
+kata16(sampleArray)
+kata17(sampleArray)
+kata18(sampleArray)
+
 
 /**
  * Daqui em diante são os bônus, por sua conta e risco
